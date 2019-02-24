@@ -1,0 +1,8 @@
+<br><div>
+    <select (change)="selectFilterValue($event.target.value)">
+        <option>Elige un valor</option>
+        <option *ngFor="let element of criterionValues" [value]="element.id">
+            {{element.id}} - {{ element.name }}
+        </option>
+    </select>
+</div>

@@ -1,0 +1,9 @@
+
+<table style="border: 1px solid grey;border-collapse: collapse;">
+  <th>Nombre</th>
+  <th>Localización</th>
+  <tr *ngFor="let launch of launchList; let i = index">
+    <td>{{launch.name}}</td>
+    <td>{{launch.location.name}}</td>
+  </tr>
+</table>

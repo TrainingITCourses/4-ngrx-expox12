@@ -1,0 +1,15 @@
+<form>
+  <label>
+    <input type="radio" name="filter" value="status" (change)="onChangeCriterion({id: '0', value: 'status'})" checked>
+    <span> Filtro por estado</span>
+  </label><br>
+  <label>
+    <input type="radio" name="filter" value="agency" (change)="onChangeCriterion({id: '1', value: 'agency'})">
+    <span> Filtro por agencia</span>
+  </label><br>
+  <label>
+    <input type="radio" name="filter" value="mission" (change)="onChangeCriterion({id: '2', value: 'mission'})">
+    <span> Filtro por misión</span>
+  </label>
+  
+</form>
